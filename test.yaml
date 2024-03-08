@@ -1,0 +1,7 @@
+name: "Configuring Qodana" # Paste the name of your profile
+baseProfile: qodana.recommended # Override qodana.recommended
+
+inspections:
+  - group: "category:JavaScript and TypeScript" # Specify the inspection category
+    enabled: true # Enable the JavaScript and TypeScript category
+K
