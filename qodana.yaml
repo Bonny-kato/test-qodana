@@ -11,8 +11,14 @@ profile:
 #Enable inspections
 #include:
 #  - name: <SomeEnabledInspectionId>
-include:
-  - name: Eslint
+inspections:
+  - name: eslint
+    enabled: true
+    parameters:
+      eslint-configuration:
+        # The path to an Eslint configuration file.
+        path: ".eslintrc"
+
 
 #Disable inspections
 #exclude:
@@ -28,5 +34,4 @@ include:
 #  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
 
 #Specify Qodana linter for analysis (Applied in CI/CD pipeline)
-use-caches: false
 linter: jetbrains/qodana-js:latest
