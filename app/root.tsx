@@ -14,6 +14,7 @@ export const links: LinksFunction = () => [
 ];
 
 export default function App() {
+  // this is sample
   return (
     <html lang="en">
       <head>
