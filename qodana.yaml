@@ -5,8 +5,17 @@
 version: "1.0"
 
 #Specify inspection profile for code analysis
-profile:
-  name: qodana.starter
+name: "Configuring Qodana"
+baseProfile: qodana.recommended
+
+inspections:
+  - group: "category:JavaScript and TypeScript" # Specify the inspection category
+    enabled: true # Enable the JavaScript and TypeScript category
+
+bootstrap: yarn install
+
+include:
+  - name: Eslint
 
 #Enable inspections
 #include:
