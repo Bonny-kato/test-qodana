@@ -5,8 +5,9 @@
 version: "1.0"
 
 #Specify inspection profile for code analysis
-name: "Configuring Qodana"
-baseProfile: qodana.recommended
+profile:
+  name: qodana.starter
+
 
 inspections:
   - group: "category:JavaScript and TypeScript" # Specify the inspection category
